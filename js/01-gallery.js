@@ -24,12 +24,11 @@ gallery.addEventListener("click", (event) => {
     `, {
         onShow: (instance) => {
             document.addEventListener("keydown", (event) => {
-                if(event.key === "Escapte") instance.close();
+                if(event.key === "Escape") instance.close();
             })
         }
     });
     instance.show();
 });
-
 
 console.log(galleryItems)
